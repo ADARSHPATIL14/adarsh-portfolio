@@ -32,11 +32,11 @@ export const ScrollRevealIntro: React.FC = () => {
 
   const scrollToHero = (e: React.MouseEvent) => {
     e.preventDefault();
-    const el = document.getElementById('profile');
+    const el = document.getElementById('home');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.scrollTo({ top: window.innerHeight * 0.9, behavior: 'smooth' });
+      window.scrollTo({ top: window.innerHeight * 0.95, behavior: 'smooth' });
     }
   };
 
@@ -52,7 +52,7 @@ export const ScrollRevealIntro: React.FC = () => {
 
   return (
     <section
-      id="home"
+      id="intro"
       ref={containerRef}
       className="relative min-h-[92vh] sm:min-h-screen flex flex-col justify-between items-center pt-24 pb-12 overflow-hidden bg-background text-foreground cinematic-footer-wrapper select-none border-b border-border/40"
     >
@@ -151,6 +151,18 @@ export const ScrollRevealIntro: React.FC = () => {
           >
             <Github size={16} />
             <span className="hidden sm:inline">GitHub</span>
+          </MagneticButton>
+
+          <MagneticButton
+            as="a"
+            href={personalInfo.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-glass-pill px-5 py-4 rounded-full text-muted-foreground hover:text-foreground text-sm flex items-center gap-2"
+            title="LinkedIn"
+          >
+            <Linkedin size={16} className="text-sky-400" />
+            <span className="hidden sm:inline">LinkedIn</span>
           </MagneticButton>
 
           {personalInfo.leetcode && (

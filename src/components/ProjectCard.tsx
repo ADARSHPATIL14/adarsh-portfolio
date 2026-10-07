@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ProjectItem } from '../types/portfolio';
+import { personalInfo } from '../data/portfolio';
 import { MagneticButton } from './ui/motion-footer';
 import {
   ExternalLink,
@@ -217,7 +218,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.id === 'leetcode-solutions' && (
             <MagneticButton
               as="a"
-              href="https://leetcode.com/u/Adarsh_patil14/"
+              href={personalInfo.leetcode}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-glass-pill px-5 py-2.5 rounded-full text-xs font-bold text-amber-300 flex items-center gap-1.5 group/btn"

@@ -6,6 +6,8 @@ export interface PersonalInfo {
   tagline: string;
   currentExploration: string;
   email: string;
+  phone?: string;
+  location?: string;
   github: string;
   linkedin: string;
   leetcode: string;
@@ -53,8 +55,11 @@ export interface TimelineItem {
 }
 
 export interface EducationItem {
+  institution?: string;
   degree: string;
   specialization: string;
+  location?: string;
+  expectedYear?: string;
   status: string;
   cgpa: string;
   relevantSubjects: string[];

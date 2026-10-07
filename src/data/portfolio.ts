@@ -30,33 +30,33 @@ export const personalInfo: PersonalInfo = {
   degree: 'B.Tech Computer Science & Engineering',
   status: 'Currently learning & building',
   tagline:
-    'I’m a passionate Computer Science student who enjoys learning programming, solving problems, and building practical projects.',
+    'B.Tech Computer Science and Engineering student with a 9.05 CGPA at REVA University, building a strong foundation in programming, data structures, databases, and software development.',
   currentExploration:
-    'Currently exploring C, C++, Java, DSA, SQL, and software development.',
-  // Centralized placeholders - Replace these with your real URLs:
-  email: 'YOUR_EMAIL',
+    'Currently exploring C, C++, Java, Python, DSA, SQL, Git/GitHub, and software development.',
+  email: 'adarshpatil9390@gmail.com',
+  phone: '9390302205',
+  location: 'Bengaluru, Karnataka, India',
   github: 'https://github.com/ADARSHPATIL14',
-  linkedin: 'YOUR_LINKEDIN_URL',
-  leetcode: 'YOUR_LEETCODE_URL',
+  linkedin: 'https://www.linkedin.com/in/adarshpatil14/',
+  leetcode: 'https://leetcode.com/u/Adarsh_patil14/',
   resumeUrl: '/resume.pdf',
 };
 
 export const aboutData = {
   heading: 'About Me',
   paragraphs: [
-    "I'm Adarsh Patil, a B.Tech Computer Science Engineering student passionate about technology, programming, and continuous learning.",
-    "I enjoy understanding how things work and then applying what I learn by building projects. My current focus is on developing strong programming fundamentals, improving my problem-solving skills, and learning the technologies used in modern software development.",
-    "I work with languages and technologies such as C, C++, Java, SQL, Git, and GitHub, while continuously exploring new areas of Computer Science.",
-    "Along with academics, I work on coding problems, academic projects, personal projects, and technical activities to gain practical experience.",
+    "I'm Adarsh Patil, a B.Tech Computer Science and Engineering student at REVA University with a 9.05 CGPA, dedicated to building a rock-solid foundation in programming, data structures, databases, and software development.",
+    "Currently developing proficiency across C, C++, Java, Python, SQL, Git/GitHub, and web technologies through academic and personal hands-on projects.",
+    "Seeking software development internship opportunities where I can apply my problem-solving skills, collaborate with engineering teams, and deliver practical, high-quality software.",
   ],
   devCard: {
     name: 'Adarsh Patil',
-    title: 'B.Tech CSE Student',
+    title: 'B.Tech CSE • REVA University',
     currentFocus: [
       'Data Structures & Algorithms',
-      'C++',
-      'Java',
-      'SQL',
+      'C & C++',
+      'Java & Python',
+      'DBMS & MySQL',
       'Software Development',
     ],
     status: 'Learning • Building • Improving',
@@ -108,47 +108,33 @@ export const skillCategories: SkillCategory[] = [
     skills: ['C', 'C++', 'Java', 'Python'],
   },
   {
-    id: 'dsa-skills',
-    title: 'Data Structures & Algorithms',
-    skills: [
-      'Arrays',
-      'Strings',
-      'Searching',
-      'Sorting',
-      'Basic Algorithms',
-      'Problem Solving',
-      'LeetCode',
-    ],
-  },
-  {
-    id: 'database-skills',
-    title: 'Database',
-    skills: ['MySQL', 'SQL', 'DBMS', 'CRUD', 'Primary Keys', 'Foreign Keys'],
-  },
-  {
-    id: 'tools-skills',
-    title: 'Tools',
-    skills: ['Git', 'GitHub', 'VS Code', 'MySQL Workbench'],
-  },
-  {
     id: 'core-cs',
     title: 'Core Computer Science',
     skills: [
-      'Object-Oriented Programming',
-      'Programming Fundamentals',
-      'Database Management Systems',
-      'Software Development Basics',
+      'Data Structures & Algorithms',
+      'Object-Oriented Programming (OOP)',
+      'Database Management Systems (DBMS)',
+      'SQL',
     ],
   },
   {
-    id: 'currently-learning',
-    title: 'Currently Learning',
+    id: 'tools-skills',
+    title: 'Tools & Platforms',
+    skills: ['Git', 'GitHub', 'VS Code', 'MySQL', 'MySQL Workbench'],
+  },
+  {
+    id: 'hardware-iot',
+    title: 'Hardware & Systems',
+    skills: ['IoT basics', 'Arduino', 'NodeMCU', 'MATLAB basics'],
+  },
+  {
+    id: 'technical-interests',
+    title: 'Areas of Interest',
     skills: [
-      'Advanced C++',
-      'Data Structures & Algorithms',
-      'Advanced Java',
-      'Backend Development',
       'Software Development',
+      'Problem Solving',
+      'Data Structures & Algorithms',
+      'Open-Source & GitHub Projects',
     ],
   },
 ];
@@ -275,16 +261,19 @@ export const timelineList: TimelineItem[] = [
 ];
 
 export const educationData: EducationItem = {
+  institution: 'REVA University',
   degree: 'Bachelor of Technology',
   specialization: 'Computer Science & Engineering',
-  status: 'Currently pursuing B.Tech in Computer Science and Engineering.',
+  location: 'Bengaluru, Karnataka',
+  expectedYear: 'Expected 2029',
+  status: 'Pursuing B.Tech in Computer Science and Engineering at REVA University, Bengaluru (Expected 2029).',
   cgpa: '9.05',
   relevantSubjects: [
-    'Programming',
+    'Programming (C, C++, Java, Python)',
     'Data Structures & Algorithms',
-    'Object-Oriented Programming',
-    'Database Management Systems',
-    'Computer Science Fundamentals',
+    'Object-Oriented Programming (OOP)',
+    'Database Management Systems (DBMS & SQL)',
+    'Git & GitHub Workflows',
     'Software Development',
   ],
 };

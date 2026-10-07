@@ -3,7 +3,7 @@ import { personalInfo } from '../data/portfolio';
 import { SectionHeader } from '../components/SectionHeader';
 import { ContactForm } from '../components/ContactForm';
 import { MagneticButton } from '../components/ui/motion-footer';
-import { Mail, MessageSquare, Copy, Check, ChevronDown, Code2 } from 'lucide-react';
+import { Mail, MessageSquare, Copy, Check, ChevronDown, Code2, Phone, MapPin } from 'lucide-react';
 import { Github, Linkedin } from '../components/Icons';
 
 export const Contact: React.FC = () => {
@@ -80,6 +80,34 @@ export const Contact: React.FC = () => {
                   )}
                 </button>
               </div>
+
+              {/* Phone & Location Card */}
+              {personalInfo.phone && (
+                <div className="p-5 rounded-3xl footer-glass-pill flex items-center justify-between group">
+                  <div className="flex items-center gap-3.5">
+                    <div className="p-3 rounded-2xl bg-card border border-border text-primary shadow-sm">
+                      <Phone size={20} />
+                    </div>
+                    <div>
+                      <span className="text-[11px] text-muted-foreground font-mono block">
+                        Phone / Call
+                      </span>
+                      <a
+                        href={`tel:${personalInfo.phone}`}
+                        className="text-sm sm:text-base font-bold text-foreground hover:text-primary transition-colors"
+                      >
+                        +91 {personalInfo.phone}
+                      </a>
+                    </div>
+                  </div>
+                  {personalInfo.location && (
+                    <div className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-card border border-border text-xs text-muted-foreground font-mono">
+                      <MapPin size={12} className="text-primary" />
+                      <span>{personalInfo.location}</span>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* GitHub Card with Magnetic Pill */}
               <MagneticButton

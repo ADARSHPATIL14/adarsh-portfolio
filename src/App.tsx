@@ -101,6 +101,17 @@ export const App: React.FC = () => {
             )
           },
           {
+            label: "LeetCode Profile",
+            href: personalInfo.leetcode,
+            target: "_blank",
+            icon: (
+              <svg className="w-5 h-5 text-amber-500/80 group-hover:text-amber-400 transition-colors" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            )
+          },
+          {
             label: "Download Resume",
             href: personalInfo.resumeUrl,
             download: "Adarsh_Patil_Resume.pdf",

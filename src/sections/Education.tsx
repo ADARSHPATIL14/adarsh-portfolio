@@ -33,11 +33,23 @@ export const Education: React.FC = () => {
                     <GraduationCap size={28} />
                   </div>
                   <div>
+                    {educationData.institution && (
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-xs font-mono font-bold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                          {educationData.institution}
+                        </span>
+                        {educationData.expectedYear && (
+                          <span className="text-xs font-mono text-muted-foreground">
+                            • {educationData.expectedYear}
+                          </span>
+                        )}
+                      </div>
+                    )}
                     <h3 className="text-2xl sm:text-3xl font-black text-foreground footer-text-glow">
                       {educationData.degree}
                     </h3>
                     <p className="text-sm font-semibold text-primary font-mono mt-0.5">
-                      {educationData.specialization}
+                      {educationData.specialization} {educationData.location && `• ${educationData.location}`}
                     </p>
                   </div>
                 </div>
